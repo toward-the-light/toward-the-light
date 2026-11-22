@@ -178,6 +178,24 @@ footer.site a { color: #c3cde0; margin: 0 0.5rem; }
   margin-bottom: 2.5rem;
 }
 
+/* ---- Postscript Page Layout ---- */
+
+/* 1. Two-column grid for the comparison sections */
+.center-heading {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: none; 
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 2.5rem;
+}
+
 .two-columns p {
   text-align: justify;
   text-indent: 1.5em;
@@ -185,31 +203,37 @@ footer.site a { color: #c3cde0; margin: 0 0.5rem; }
   margin-bottom: 1rem;
 }
 
-/* Stack columns on mobile screens */
 @media (max-width: 640px) {
   .two-columns { 
     grid-template-columns: 1fr; 
     gap: 15px; 
   }
 }
-/* ---- Book-style Paragraph Formatting ---- */
+
+/* 2. Book-style paragraph formatting (Double spacing & Drop Cap) */
 main.chapter p {
-  line-height: 2;          /* This creates the "double space" look */
-  margin-top: 0;           /* Removes the gap between paragraphs */
-  margin-bottom: 0;        /* Removes the gap between paragraphs */
-  text-indent: 2em;        /* Indents the first line */
-  text-align: justify;     /* Straight edges on both sides */
-  hyphens: auto;           /* Adds hyphens for broken words at line ends */
+  line-height: 2;          
+  margin-top: 0;           
+  margin-bottom: 0;        
+  text-indent: 2em;        
+  text-align: justify;     
+  hyphens: auto;           
 }
 
-/* The first paragraph of the chapter shouldn't be indented */
-main.chapter p:first-of-type,
+/* Reset spacing for breadcrumbs and subtitle */
+main.chapter .crumbs,
+main.chapter .subtitle {
+  line-height: normal;
+  text-indent: 0;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+/* First paragraph shouldn't be indented, but gets the Drop Cap */
 main.chapter .subtitle + p {
   text-indent: 0;
 }
 
-/* Optional: Drop Cap for the very first letter (like the book) */
-main.chapter p:first-of-type::first-letter,
 main.chapter .subtitle + p::first-letter {
   font-size: 3.2em;
   float: left;
@@ -217,4 +241,5 @@ main.chapter .subtitle + p::first-letter {
   margin-right: 0.05em;
   margin-top: 0.05em;
   font-weight: bold;
+  font-family: var(--serif);
 }
