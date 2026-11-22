@@ -178,9 +178,9 @@ footer.site a { color: #c3cde0; margin: 0 0.5rem; }
   margin-bottom: 2.5rem;
 }
 
-/* ---- Postscript Page Layout ---- */
+/* ---- Postscript Layout & Formatting (CLEAN) ---- */
 
-/* 1. Two-column grid for the comparison sections */
+/* 1. Center Headings */
 .center-heading {
   text-align: center;
   font-size: 1.4rem;
@@ -189,6 +189,7 @@ footer.site a { color: #c3cde0; margin: 0 0.5rem; }
   border-bottom: none; 
 }
 
+/* 2. Two-column grid */
 .two-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -210,7 +211,7 @@ footer.site a { color: #c3cde0; margin: 0 0.5rem; }
   }
 }
 
-/* 2. Book-style paragraph formatting (Double spacing & Drop Cap) */
+/* 3. Book-style paragraph formatting (Double spacing) */
 main.chapter p {
   line-height: 2;          
   margin-top: 0;           
@@ -220,7 +221,7 @@ main.chapter p {
   hyphens: auto;           
 }
 
-/* Reset spacing for breadcrumbs and subtitle */
+/* 4. Reset breadcrumbs and subtitle so they don't get double-spaced */
 main.chapter .crumbs,
 main.chapter .subtitle {
   line-height: normal;
@@ -229,63 +230,11 @@ main.chapter .subtitle {
   margin-bottom: 1rem;
 }
 
-/* ---- Postscript Page Layout ---- */
-
-/* 1. Two-column grid for the comparison sections */
-.center-heading {
-  text-align: center;
-  font-size: 1.4rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
-  border-bottom: none; 
-}
-
-.two-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 2.5rem;
-}
-
-.two-columns p {
-  text-align: justify;
-  text-indent: 1.5em;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 640px) {
-  .two-columns { 
-    grid-template-columns: 1fr; 
-    gap: 15px; 
-  }
-}
-
-/* 2. Book-style paragraph formatting (Double spacing) */
-main.chapter p {
-  line-height: 2;          
-  margin-top: 0;           
-  margin-bottom: 0;        
-  text-indent: 2em;        
-  text-align: justify;     
-  hyphens: auto;           
-}
-
-/* Reset spacing for breadcrumbs and subtitle */
-main.chapter .crumbs,
-main.chapter .subtitle {
-  line-height: normal;
-  text-indent: 0;
-  text-align: left;
-  margin-bottom: 1rem;
-}
-
-/* First paragraph shouldn't be indented, but gets the Drop Cap */
+/* 5. First paragraph: no indent, but gets the Drop Cap */
 main.chapter .subtitle + p {
   text-indent: 0;
 }
 
-/* ONLY apply drop cap to the paragraph right after the subtitle */
 main.chapter .subtitle + p::first-letter {
   font-size: 3.2em;
   float: left;
