@@ -192,3 +192,29 @@ footer.site a { color: #c3cde0; margin: 0 0.5rem; }
     gap: 15px; 
   }
 }
+/* ---- Book-style Paragraph Formatting ---- */
+main.chapter p {
+  line-height: 2;          /* This creates the "double space" look */
+  margin-top: 0;           /* Removes the gap between paragraphs */
+  margin-bottom: 0;        /* Removes the gap between paragraphs */
+  text-indent: 2em;        /* Indents the first line */
+  text-align: justify;     /* Straight edges on both sides */
+  hyphens: auto;           /* Adds hyphens for broken words at line ends */
+}
+
+/* The first paragraph of the chapter shouldn't be indented */
+main.chapter p:first-of-type,
+main.chapter .subtitle + p {
+  text-indent: 0;
+}
+
+/* Optional: Drop Cap for the very first letter (like the book) */
+main.chapter p:first-of-type::first-letter,
+main.chapter .subtitle + p::first-letter {
+  font-size: 3.2em;
+  float: left;
+  line-height: 0.85;
+  margin-right: 0.05em;
+  margin-top: 0.05em;
+  font-weight: bold;
+}
