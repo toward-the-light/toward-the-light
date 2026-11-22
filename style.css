@@ -161,3 +161,34 @@ footer.site a { color: #c3cde0; margin: 0 0.5rem; }
 .chapter-list { columns: 2; column-gap: 2rem; font-size: 0.97rem; }
 .chapter-list li { break-inside: avoid; margin-bottom: 0.45rem; }
 @media (max-width: 640px) { .chapter-list { columns: 1; } .hero h1 { font-size: 1.9rem; } }
+
+/* ---- Postscript Column Layout ---- */
+.center-heading {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: none; /* Removes the line from your global h2 style */
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 2.5rem;
+}
+
+.two-columns p {
+  text-align: justify;
+  text-indent: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Stack columns on mobile screens */
+@media (max-width: 640px) {
+  .two-columns { 
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+  }
+}
