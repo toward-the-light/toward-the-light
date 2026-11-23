@@ -157,6 +157,8 @@ nav.pn .toc { color: var(--muted); }
   border-bottom: 1px solid var(--ink);
 }
 main.chapter h1 .chnum { display: block; font-size: 1rem; color: var(--muted); margin-bottom: 0.3rem; }
+/* letter-spaced emphasis, reproducing the printed book's Sperrdruck */
+.sp { letter-spacing: 0.18em; }
 
 /* ---- misc ---- */
 ul.clean { padding-left: 1.2rem; }
