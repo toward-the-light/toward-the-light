@@ -130,10 +130,10 @@ table.parallel td:last-child { border-left: 1px solid #e6ddc8; }
 span.soon { color: var(--muted); font-style: italic; font-size: 0.9em; }
 
 /* ---- book chapter pages ---- */
-main.chapter h1 { font-size: 1.6rem; }
+main.chapter h1 { font-size: 1.6rem; text-align: center; }
 .crumbs { font-family: var(--sans); font-size: 0.82rem; color: var(--muted); margin-bottom: 0.4rem; }
 .crumbs a { color: var(--muted); }
-.subtitle { font-style: italic; color: var(--muted); margin-top: -0.6rem; }
+.subtitle { font-style: italic; color: var(--muted); margin-top: -0.6rem; text-align: center; }
 section.fn { margin-top: 2.5rem; border-top: 1px solid #e2d9c4; font-size: 0.9rem; color: #444c5e; }
 section.fn h2 { font-size: 1rem; border: none; }
 section.fn ol { padding-left: 1.4rem; }
@@ -156,7 +156,7 @@ nav.pn .toc { color: var(--muted); }
   content: ""; display: block; width: 3rem; margin: 1rem auto 0;
   border-bottom: 1px solid var(--ink);
 }
-main.chapter h1 .chnum { display: block; font-size: 1rem; color: var(--muted); margin-bottom: 0.3rem; }
+main.chapter h1 .chnum { display: block; text-align: center; font-size: 1rem; color: var(--muted); margin-bottom: 0.3rem; }
 /* letter-spaced emphasis, reproducing the printed book's Sperrdruck */
 .sp { letter-spacing: 0.18em; }
 
