@@ -244,3 +244,12 @@ main.chapter .subtitle + p::first-letter {
   font-weight: bold;
   font-family: var(--serif);
 }
+/* Force the footnote list to use numbers */
+section.fn ol {
+  list-style-type: decimal; /* Forces 1, 2, 3 instead of bullets */
+  padding-left: 2rem;       /* Gives space for the numbers */
+}
+
+section.fn li {
+  margin-bottom: 0.5rem;    /* Adds a little space between footnotes */
+}
