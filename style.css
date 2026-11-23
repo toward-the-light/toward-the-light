@@ -147,6 +147,17 @@ nav.pn a:hover { text-decoration: underline; }
 nav.pn .toc { color: var(--muted); }
 @media (max-width: 640px) { nav.pn { flex-direction: column; } nav.pn a { max-width: 100%; } }
 
+/* ---- book: part headings & chapter headings ---- */
+.greeting {
+  text-align: center; font-size: 1.15rem; letter-spacing: 0.08em;
+  font-variant: small-caps; margin: 1rem 0 2rem;
+}
+.greeting::after {
+  content: ""; display: block; width: 3rem; margin: 1rem auto 0;
+  border-bottom: 1px solid var(--ink);
+}
+main.chapter h1 .chnum { display: block; font-size: 1rem; color: var(--muted); margin-bottom: 0.3rem; }
+
 /* ---- misc ---- */
 ul.clean { padding-left: 1.2rem; }
 .notice {
