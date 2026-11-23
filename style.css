@@ -156,7 +156,8 @@ nav.pn .toc { color: var(--muted); }
   content: ""; display: block; width: 3rem; margin: 1rem auto 0;
   border-bottom: 1px solid var(--ink);
 }
-main.chapter h1 .chnum { display: block; text-align: center; font-size: 1rem; color: var(--muted); margin-bottom: 0.3rem; }
+/* centered chapter number above the title, styled identically to .chapter-title .number (ardor-01) */
+main.chapter h1 .chnum { display: block; text-align: center; font-size: 1.1rem; text-indent: 0; margin-bottom: 0.5rem; }
 /* centered section headings within a chapter (e.g. Speech of Christ I. / II.) */
 main.chapter h2.csec { text-align: center; font-size: 1.2rem; margin: 2.2rem 0 1.2rem; }
 /* epigraph block after a chapter opening */
