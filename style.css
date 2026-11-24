@@ -287,6 +287,13 @@ section.fn li {
   border: 0;
   border-top: 1px solid var(--ink);
 }
+/* short centered rule used as a section divider within a chapter */
+hr.divider {
+  width: 60px;
+  margin: 2rem auto;
+  border: 0;
+  border-top: 1px solid var(--ink);
+}
 /* avoid a double rule-line when the greeting sits in a greeting-container with its own hr */
 .greeting-container .greeting::after { content: none; }
 
