@@ -41,9 +41,12 @@ chapter-level; the main book has no per-page anchors.
   the original 1929/30 pagination. Link targets are unaffected
   (chapter-level, content-matched).
 - `qa2` footnote #44 has no text in the source; a placeholder is rendered.
-- The Q&A publishers' prefaces and the Q&A I appendix (marriage /
-  birth control) are not in the online source text; they exist in the
-  1979 print edition and could be transcribed if the foundation agrees.
+- The Q&A publisher's preface (1929, `qa-preface.html`) and the Q&A I
+  appendix (`qa1-appendix.html`, "Marriage, Birth Control and
+  Abortion") are not in the online source text; both were transcribed
+  from the 1929/1979 print editions and verified against the Danish
+  original. A separate 1930 preface for Supplement II may exist in
+  print but has not been transcribed.
 - `gen_qa.py` contains a `CONTENT_FIXES` table for known source
   mistranslations (verified against the Danish original,
   *Spørgsmål og Svar*).
