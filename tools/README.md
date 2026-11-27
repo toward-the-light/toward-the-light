@@ -40,13 +40,14 @@ chapter-level; the main book has no per-page anchors.
   editions are available, the visible page numbers should be switched to
   the original 1929/30 pagination. Link targets are unaffected
   (chapter-level, content-matched).
-- `qa2` footnote #44 has no text in the source; a placeholder is rendered.
-- The Q&A publisher's preface (1929, `qa-preface.html`) and the Q&A I
-  appendix (`qa1-appendix.html`, "Marriage, Birth Control and
-  Abortion") are not in the online source text; both were transcribed
-  from the 1929/1979 print editions and verified against the Danish
-  original. A separate 1930 preface for Supplement II may exist in
-  print but has not been transcribed.
+- `qa2` footnote (Q31, suicide by toxic substance) was missing in the
+  online source; restored from the 1930 print edition (print p. 53,
+  note 1; Danish original note 120).
+- The Q&A publisher's prefaces (1929, `qa-preface.html`; 1930,
+  `qa2-preface.html`) and the Q&A I appendix (`qa1-appendix.html`,
+  "Marriage, Birth Control and Abortion") are not in the online
+  source text; all were transcribed from the 1929/1930 print editions
+  and verified against the Danish original.
 - `gen_qa.py` contains a `CONTENT_FIXES` table for known source
   mistranslations (verified against the Danish original,
   *Spørgsmål og Svar*).
